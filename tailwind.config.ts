@@ -45,7 +45,13 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))',
 					brand: 'hsl(var(--accent-brand))',
-					'brand-foreground': 'hsl(var(--accent-brand-foreground))'
+					'brand-foreground': 'hsl(var(--accent-brand-foreground))',
+					secondary: 'hsl(var(--accent-secondary))',
+					'secondary-foreground': 'hsl(var(--accent-secondary-foreground))',
+					tertiary: 'hsl(var(--accent-tertiary))',
+					'tertiary-foreground': 'hsl(var(--accent-tertiary-foreground))',
+					quaternary: 'hsl(var(--accent-quaternary))',
+					'quaternary-foreground': 'hsl(var(--accent-quaternary-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -73,6 +79,10 @@ export default {
 					DEFAULT: 'hsl(var(--danger))',
 					foreground: 'hsl(var(--danger-foreground))'
 				},
+				info: {
+					DEFAULT: 'hsl(var(--info))',
+					foreground: 'hsl(var(--info-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -92,12 +102,22 @@ export default {
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
 				'glow': 'var(--shadow-glow)',
-				'success': 'var(--shadow-success)'
+				'success': 'var(--shadow-success)',
+				'warning': 'var(--shadow-warning)',
+				'danger': 'var(--shadow-danger)',
+				'info': 'var(--shadow-info)',
+				'rainbow': 'var(--shadow-rainbow)'
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-brand': 'var(--gradient-brand)',
+				'gradient-secondary': 'var(--gradient-secondary)',
 				'gradient-success': 'var(--gradient-success)',
+				'gradient-warning': 'var(--gradient-warning)',
+				'gradient-danger': 'var(--gradient-danger)',
+				'gradient-info': 'var(--gradient-info)',
+				'gradient-rainbow': 'var(--gradient-rainbow)',
+				'gradient-rainbow-subtle': 'var(--gradient-rainbow-subtle)',
 				'gradient-elegant': 'var(--gradient-elegant)'
 			},
 			keyframes: {
@@ -124,6 +144,15 @@ export default {
 				'pulse-glow': {
 					'0%, 100%': { boxShadow: 'var(--shadow-elegant)' },
 					'50%': { boxShadow: 'var(--shadow-glow)' }
+				},
+				'rainbow-pulse': {
+					'0%, 100%': { boxShadow: 'var(--shadow-elegant)' },
+					'33%': { boxShadow: 'var(--shadow-success)' },
+					'66%': { boxShadow: 'var(--shadow-warning)' }
+				},
+				'color-shift': {
+					'0%': { filter: 'hue-rotate(0deg)' },
+					'100%': { filter: 'hue-rotate(360deg)' }
 				}
 			},
 			animation: {
@@ -132,7 +161,9 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out',
 				'scale-in': 'scale-in 0.3s ease-out',
 				'slide-up': 'slide-up 0.4s ease-out',
-				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'rainbow-pulse': 'rainbow-pulse 3s ease-in-out infinite',
+				'color-shift': 'color-shift 4s ease-in-out infinite'
 			}
 		}
 	},
