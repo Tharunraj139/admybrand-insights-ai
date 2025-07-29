@@ -76,11 +76,6 @@ To run this project locally on your machine, follow these steps:
 A brief summary of AI tools used and key prompts will be provided as a separate document/section detailing the AI-assisted workflow in building this project.
 
 ---
-
-## Portfolio Addition
-
-This project is meticulously crafted to showcase skills in modern UI/UX design, front-end development with React, TypeScript, and Tailwind CSS, and the effective leveraging of AI tools for rapid prototyping and development. Feel free to add this project to your professional portfolio or CV.
-
 Best regards,
 
 P.Tharun Raj.
